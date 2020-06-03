@@ -1,0 +1,16 @@
+<div class="container py-3">
+  <h1>Home</h1>
+  <hr />
+  <br/>
+  <br/>
+
+  <h3>Listado de Productos</h3>
+  <br/>
+  <div *ngFor="let producto of productos">
+    <p>Producto: {{ producto.descripcion }} </p>
+    <p>Cantidad: {{ producto.cantidad }} </p>
+    <p>Precio: {{ producto.precio }} </p>
+    <p>Categoria: {{ producto.categoria.descripcion }} </p>
+    <br/>
+  </div>
+</div>

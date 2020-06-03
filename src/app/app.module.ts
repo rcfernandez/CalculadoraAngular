@@ -5,13 +5,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CalculadoraComponent } from './calculadora/calculadora.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms'; // *2 hay que agregarlo para que funcione el 'ngModel'
-import { HomeComponent } from './home/home.component';
+import { HomeComponent } from './home/components/home.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { LoginComponent } from './login/login.component';
 import { RegistroComponent } from './registro/registro.component';
 import { CatalogoComponent } from './catalogo/catalogo.component';
 import { MenuComponent } from './shared/menu/menu.component';
-import { HttpClientModule } from "@angular/common/http"
+import { HttpClientModule } from "@angular/common/http";
+import { UsuarioComponent } from './usuario/components/usuario.component';
+import { ProductosComponent } from './productos/components/productos.component'
 
 @NgModule({
   declarations: [
@@ -23,6 +25,8 @@ import { HttpClientModule } from "@angular/common/http"
     RegistroComponent,
     CatalogoComponent,
     MenuComponent,
+    UsuarioComponent,
+    ProductosComponent,
   ],
   imports: [
     BrowserModule,
